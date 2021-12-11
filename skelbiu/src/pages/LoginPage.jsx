@@ -1,10 +1,12 @@
 import React from "react";
 import Login from "../component/Login";
+import Navbar from "../component/Navbar";
 
 function LoginPage(){
     return(
         <div style={{height:'1000px', backgroundColor:'white'}}>
-            <h1>Login Page</h1>
+
+            <Navbar/>
             <Login/>
         </div>
 

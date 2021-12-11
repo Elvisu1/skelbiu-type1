@@ -1,10 +1,12 @@
 import React from "react";
 import Register from "../component/Register";
+import Navbar from "../component/Navbar";
 
 function RegisterPage(){
     return(
-        <div>
-            <h1>Register Page</h1>
+        <div style={{height:'1000px', backgroundColor:'white'}}>
+
+            <Navbar/>
             <Register/>
         </div>
 

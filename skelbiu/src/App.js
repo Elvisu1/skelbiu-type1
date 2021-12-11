@@ -10,6 +10,7 @@ import Navbar from "./component/Navbar";
 import HomeHeroSlider from "./component/HomeHero/HomeHeroSlider";
 import React from "react";
 import Login from "./component/Login";
+import Footer from "./component/Footer/Footer";
 
 const Container = styled.div`
   left: 20%;
@@ -32,6 +33,7 @@ function App() {
             <Switch>
                 <Route path='/' exact={'/'}>
                     <Header/>
+
                 </Route>
                 <Route path={'/Login'}>
                     <LoginPage/>
@@ -40,7 +42,7 @@ function App() {
                     <RegisterPage/>
                 </Route>
             </Switch>
-
+            <Footer/>
 
 
 

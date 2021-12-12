@@ -7,6 +7,7 @@ function LoginPage(){
         <div style={{height:'1000px', backgroundColor:'white'}}>
 
             <Navbar/>
+
             <Login/>
         </div>
 

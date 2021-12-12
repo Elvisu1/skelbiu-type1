@@ -59,9 +59,11 @@ function Register(){
                                     // onBlur={handleBlur}
                                        placeholder={'Repeat password'}/>
                                 {errors.password2  && <p style={{color:"red"}} className={'error'}>{errors.password2}</p>}
+
                             </div>
 
                             <button className={css.btnLogin} type={'submit'}>Submit</button>
+                            <p>Already have account? <a href={'/Login'}>Login here</a></p>
                         </form>
                     )
                 }}

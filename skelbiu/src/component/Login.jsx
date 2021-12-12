@@ -28,30 +28,37 @@ function Login(){
                   }) => {
                     console.log(errors)
                     return(
-                        <form  className={css.form} onSubmit={handleSubmit}>
-                            <div className={css.inputWrapper}>
-                                <label>Email:</label>
-                                <input className={css.inputs} type="text"
-                                       name={'email'}
-                                       value={values.email}
-                                       onChange={handleChange}
-                                       // onBlur={handleBlur}
-                                placeholder={'Email'}/>
-                                {errors.email  && <p style={{color:"red"}} className={'error'}>{errors.email}</p>}
-                            </div>
-                            <div className={css.inputWrapper}>
-                                <label>Password:</label>
-                                <input className={css.inputs} type="text"
-                                       name={'password'}
-                                       value={values.password}
-                                       onChange={handleChange}
-                                       // onBlur={handleBlur}
-                                       placeholder={'Password'}/>
-                                {errors.password  && <p style={{color:"red"}} className={'error'}>{errors.password}</p>}
-                            </div>
+                        <div>
 
-                            <button className={css.btnLogin} type={'submit'}>Submit</button>
-                        </form>
+                            <form  className={css.form} onSubmit={handleSubmit}>
+
+                                <div className={css.inputWrapper}>
+                                    <label>Email:</label>
+                                    <input className={css.inputs} type="text"
+                                           name={'email'}
+                                           value={values.email}
+                                           onChange={handleChange}
+                                        // onBlur={handleBlur}
+                                           placeholder={'Email'}/>
+                                    {errors.email  && <p style={{color:"red"}} className={'error'}>{errors.email}</p>}
+                                </div>
+                                <div className={css.inputWrapper}>
+                                    <label>Password:</label>
+                                    <input className={css.inputs} type="text"
+                                           name={'password'}
+                                           value={values.password}
+                                           onChange={handleChange}
+                                        // onBlur={handleBlur}
+                                           placeholder={'Password'}/>
+                                    {errors.password  && <p style={{color:"red"}} className={'error'}>{errors.password}</p>}
+
+                                </div>
+
+                                <button className={css.btnLogin} type={'submit'}>Submit</button>
+                                <p>Dont have Account ? <a href={'/Register'}>Register here</a></p>
+                            </form>
+                        </div>
+
                     )
                 }}
             </Formik>

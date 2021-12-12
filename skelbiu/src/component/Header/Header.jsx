@@ -1,5 +1,6 @@
 import Navbar from "../Navbar";
 import HomeHeroSlider from "../HomeHero/HomeHeroSlider";
+import HomePage from "../../pages/HomePage";
 function Header(){
     return(
 
@@ -7,6 +8,7 @@ function Header(){
 
             <Navbar/>
             <HomeHeroSlider/>
+            <HomePage/>
 
 
 

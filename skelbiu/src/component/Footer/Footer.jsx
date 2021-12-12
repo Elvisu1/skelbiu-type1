@@ -4,6 +4,7 @@ function Footer(){
     return (
         <div className={css.div}>
             <p>This is footer</p>
+            <p>Copyright 2021 © UX Themes</p>
         </div>
     )
 }

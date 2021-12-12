@@ -14,7 +14,6 @@ const array = [
 
 const NavLink = styled(Link)`
   font-size: 20px;
-  font-family: monospace;
   padding: 20px;
   text-decoration: none;
   color: #000000;

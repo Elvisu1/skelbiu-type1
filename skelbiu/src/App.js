@@ -13,7 +13,7 @@ import Login from "./component/Login";
 import Footer from "./component/Footer/Footer";
 
 const Container = styled.div`
-  left: 20%;
+  left: 15%;
   position: relative;
   display: inline-block;
   width: 1500px;
